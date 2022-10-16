@@ -18,7 +18,9 @@ public class Bike implements Serializable {
     private String name;
     // @Column(length = 45)
     private String brand;
-    @Column(name = "`year`")
+    @Column(name="years")
+
+    //@Column(name = "`year`")
     private Integer year;
 
 

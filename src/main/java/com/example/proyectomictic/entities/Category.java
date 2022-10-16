@@ -8,10 +8,11 @@ import java.util.List;
 
 @Entity
 @Table(name = "category")
+//@JsonIgnoreProperties("categorys")
 public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+    private Integer id;
     //@Column(length = 45)
     private String name;
    // @Column(length = 250)
@@ -25,7 +26,7 @@ public class Category implements Serializable {
     }
 
     public Category(Integer id, String name, String description, List<Bike> bikes) {
-        Id = id;
+        this.id = id;
         this.name = name;
         this.description = description;
         this.bikes = bikes;
@@ -38,11 +39,11 @@ public class Category implements Serializable {
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
