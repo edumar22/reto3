@@ -23,7 +23,7 @@ public class Reservation implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "ClientId")
-    @JsonIgnoreProperties({"reservations", "menssages"})
+    @JsonIgnoreProperties({"reservations", "messages"})
     private Client client;
 
     @OneToOne(cascade = {CascadeType.REMOVE}, mappedBy = "reservation")
