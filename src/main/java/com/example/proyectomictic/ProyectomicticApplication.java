@@ -9,13 +9,21 @@ import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import javax.persistence.Entity;
 /*
 @SpringBootApplication(scanBasePackages = "com.example.proyectomictic")
-@EntityScan("com.example.proyectomictic.entities")
+@EntityScan(basePackages={"com.example.proyectomictic.entities"})
 @EnableJdbcRepositories("com.example.proyectomictic.repository")
+
+
+@SpringBootApplication
+@EntityScan(basePackages={"com.example.retobicicleta.Model" })
+//@EnableJpaRepositories("Repository")
+
 
  */
 //@EnableConfigurationProperties
 
 @SpringBootApplication
+@EntityScan(basePackages={"com.example.proyectomictic.entities"})
+//@EnableJdbcRepositories("com.example.proyectomictic.repository")
 public class ProyectomicticApplication {
 
     public static void main(String[] args) {

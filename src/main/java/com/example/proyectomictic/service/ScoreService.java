@@ -1,9 +1,12 @@
 package com.example.proyectomictic.service;
-
+import com.example.proyectomictic.entities.Message;
+import com.example.proyectomictic.entities.Reservation;
 import com.example.proyectomictic.entities.Score;
 import com.example.proyectomictic.repository.ScoreRepository;
+//import com.example.proyectomictic.Repository.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 import java.util.Optional;

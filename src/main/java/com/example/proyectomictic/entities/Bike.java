@@ -44,7 +44,10 @@ public class Bike implements Serializable {
 
     }
 
-    public Bike(String name, String brand, Integer year, String description, Category category, List<Message> messages, List<Reservation> reservations) {
+    public Bike(String name, String brand,
+                Integer year, String description,
+                Category category, List<Message> messages,
+                List<Reservation> reservations) {
         this.name = name;
         this.brand = brand;
         this.year = year;
